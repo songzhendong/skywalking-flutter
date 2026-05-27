@@ -1,0 +1,19 @@
+# Publish skywalking_flutter to pub.dev via GitHub OIDC (no local dart pub login).
+# Before first run: pub.dev -> sign in -> packages/skywalking_flutter/admin (after first publish)
+#   OR enable GitHub publishing per https://dart.dev/tools/pub/automated-publishing
+#
+# First-time bootstrap: run workflow manually after linking GitHub on pub.dev account.
+name: Publish to pub.dev
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  publish:
+    permissions:
+      id-token: write
+      contents: read
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
