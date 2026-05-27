@@ -9,13 +9,22 @@
 
 说明本机 CLI 无法完成 OAuth，**不要反复重试**同一流程。
 
-## 方案 A：GitHub Actions（推荐，无需本机 Google）
+## 方案 A：GitHub Actions（推荐，无需本机 `flutter pub login`）
 
-1. 浏览器登录 https://pub.dev（Google 账号，与本地相同）。
-2. 在 GitHub 仓库 https://github.com/songzhendong/skywalking-flutter 确认已推送 `.github/workflows/publish.yml`。
-3. 在 pub.dev 账户设置中关联 GitHub（若尚未关联）。
-4. GitHub → **Actions** → **Publish to pub.dev** → **Run workflow**（手动触发首发）。
-5. 或打 tag 发布：`git tag v0.1.0 && git push origin v0.1.0`
+Cloud Shell / 本机的 `localhost` OAuth 容易失败（`did not contain required parameter "code"`），请用 **打 tag 触发发布**：
+
+1. 浏览器登录 https://pub.dev（Google 账号：`xiaodong986@gmail.com`）。
+2. 在本机执行：
+
+```bash
+cd C:\Users\Administrator\IdeaProjects\sw\tools\skywalking_flutter_otlp
+git pull
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+3. 打开 https://github.com/songzhendong/skywalking-flutter/actions 查看 **Publish to pub.dev** 是否成功。
+4. 首发成功后，在 https://pub.dev/packages/skywalking_flutter/admin 开启 **Publish from GitHub Actions**（仓库 `songzhendong/skywalking-flutter`，标签 `v{{version}}`）。
 
 首发成功后，在 https://pub.dev/packages/skywalking_flutter/admin 开启 **Publish from GitHub Actions**，标签模式 `v{{version}}`。
 
