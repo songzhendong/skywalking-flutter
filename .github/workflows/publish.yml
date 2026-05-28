@@ -1,0 +1,42 @@
+# Publish skywalking_flutter to pub.dev (GitHub OIDC).
+# Prerequisite: pub.dev package Admin → Automated publishing
+#   repository: songzhendong/skywalking-flutter (or skywalking-dart per your pub setup)
+#   tag pattern: v{{version}}
+name: Publish to pub.dev
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+
+      - name: Obtain pub.dev OIDC token
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const token = await core.getIDToken('https://pub.dev');
+            core.exportVariable('PUB_TOKEN', token);
+
+      - name: Configure pub.dev credentials
+        run: dart pub token add https://pub.dev --env-var PUB_TOKEN
+
+      - name: Pub get
+        run: dart pub get
+
+      - name: Publish dry run
+        run: dart pub publish --dry-run
+
+      - name: Publish to pub.dev
+        run: dart pub publish --force

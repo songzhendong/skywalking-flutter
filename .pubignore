@@ -1,0 +1,7 @@
+# Not published to pub.dev
+example/
+scripts/
+build/
+.dart_tool/
+pubspec.lock
+**/.metadata

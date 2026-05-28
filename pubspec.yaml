@@ -1,0 +1,26 @@
+name: skywalking_flutter
+description: OpenTelemetry OTLP/HTTP agent for Dart and Flutter apps (SkyWalking OAP compatible).
+version: 0.1.0
+license: Apache-2.0
+
+homepage: https://github.com/songzhendong/skywalking-dart
+repository: https://github.com/songzhendong/skywalking-dart
+issue_tracker: https://github.com/songzhendong/skywalking-dart/issues
+documentation: https://github.com/songzhendong/skywalking-dart/blob/main/doc/USAGE.md
+
+topics:
+  - opentelemetry
+  - otlp
+  - skywalking
+  - tracing
+  - flutter
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  http: ^1.2.2
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.25.8

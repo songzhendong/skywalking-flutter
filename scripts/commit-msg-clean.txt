@@ -1,0 +1,4 @@
+feat: align skywalking_flutter 0.1.0 with skywalking-dart OTLP agent
+
+Same pure-Dart OTLP implementation as songzhendong/skywalking-dart.
+pub.dev package skywalking_flutter; repository links point to skywalking-dart.
