@@ -44,17 +44,11 @@ Examples use service **`xt-open-app`** and OAP rule **`flutter-otlp`** ([`doc/oa
       <a href="doc/images/horizon-metrics-inspect.png">
         <img src="doc/images/horizon-metrics-inspect.png" width="420" alt="Metrics inspect"/>
       </a>
-      <br/>
-      <b>Metrics inspect</b><br/>
-      <sub>OPERATE → Metrics inspect · <code>meter_flutter_*</code> (MAL-OTEL / flutter-otlp)</sub>
     </td>
     <td align="center" width="50%">
       <a href="doc/images/horizon-trace-parent-child.png">
         <img src="doc/images/horizon-trace-parent-child.png" width="420" alt="Trace parent-child"/>
       </a>
-      <br/>
-      <b>Trace (parent / child)</b><br/>
-      <sub>OTel &amp; Zipkin · root <code>app.cold_start</code> and child spans · <b>Parent Id</b> in panel</sub>
     </td>
   </tr>
   <tr>
@@ -62,17 +56,11 @@ Examples use service **`xt-open-app`** and OAP rule **`flutter-otlp`** ([`doc/oa
       <a href="doc/images/horizon-zipkin-traces-list.png">
         <img src="doc/images/horizon-zipkin-traces-list.png" width="420" alt="Trace list"/>
       </a>
-      <br/>
-      <b>Trace list</b><br/>
-      <sub>Filter by <code>OTEL_SERVICE_NAME</code> · HTTP CLIENT and app spans</sub>
     </td>
     <td align="center" width="50%">
       <a href="doc/images/horizon-zipkin-trace-detail.png">
         <img src="doc/images/horizon-zipkin-trace-detail.png" width="420" alt="Span detail"/>
       </a>
-      <br/>
-      <b>Span detail</b><br/>
-      <sub>Tags: <code>telemetry.sdk.name=skywalking-flutter</code>, <code>telemetry.sdk.language=dart</code></sub>
     </td>
   </tr>
 </table>
