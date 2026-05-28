@@ -638,27 +638,17 @@ dart run bin/verify_otlp.dart
 | Trace | Horizon → **OTel & Zipkin Traces**，Service 选你的 `serviceName` |
 | Metrics | Horizon → **OPERATE → Metrics inspect**（**不在 Zipkin 页面**） |
 
-#### 示例截图（两排缩略图，点击放大）
-
-**点击下方缩略图可在新页面查看原图。**
-
 <table>
   <tr>
     <td align="center" width="50%">
       <a href="images/horizon-metrics-inspect.png">
         <img src="images/horizon-metrics-inspect.png" width="420" alt="Metrics inspect"/>
       </a>
-      <br/>
-      <b>① Metrics inspect（指标）</b><br/>
-      <sub>OPERATE → Metrics inspect · 添加 MAL-OTEL / <code>flutter-otlp</code> · 如 <code>meter_flutter_http_requests_rpm</code></sub>
     </td>
     <td align="center" width="50%">
       <a href="images/horizon-trace-parent-child.png">
         <img src="images/horizon-trace-parent-child.png" width="420" alt="Trace parent-child"/>
       </a>
-      <br/>
-      <b>② Trace 父子链路</b><br/>
-      <sub>根 Span <code>app.cold_start</code> · 子 Span <code>feed.prefetch</code> 等 · 右侧 <b>Parent Id</b></sub>
     </td>
   </tr>
   <tr>
@@ -666,17 +656,11 @@ dart run bin/verify_otlp.dart
       <a href="images/horizon-zipkin-traces-list.png">
         <img src="images/horizon-zipkin-traces-list.png" width="420" alt="Trace list"/>
       </a>
-      <br/>
-      <b>③ Trace 列表</b><br/>
-      <sub>OTel &amp; Zipkin Traces · 按 <code>OTEL_SERVICE_NAME</code> 过滤</sub>
     </td>
     <td align="center" width="50%">
       <a href="images/horizon-zipkin-trace-detail.png">
         <img src="images/horizon-zipkin-trace-detail.png" width="420" alt="Span detail"/>
       </a>
-      <br/>
-      <b>④ Span 详情</b><br/>
-      <sub>Tags：<code>telemetry.sdk.name=skywalking-flutter</code>、<code>telemetry.sdk.language=dart</code></sub>
     </td>
   </tr>
 </table>
@@ -693,7 +677,7 @@ OAP 加载 `flutter-otlp` 规则并重启后，在 **Metrics inspect** 中通过
 
 #### Trace（链路，含父子 Span）说明
 
-在 **OTel & Zipkin Traces** 中按 Service 过滤（如 `xt-open-app`）。列表中每条 Trace 对应一次调用链；点开一条后，中间时间轴展示 **父子层级**（见上图 ②）：
+在 **OTel & Zipkin Traces** 中按 Service 过滤（如 `xt-open-app`）。列表中每条 Trace 对应一次调用链；点开一条后，中间时间轴展示 **父子层级**（见上图）：
 
 - **父 Span**：例如 `app.cold_start`（冷启动根节点）  
 - **子 Span**：同一 `traceId` 下，如 `app.bootstrap.config`、`feed.prefetch`、`screen.home`  
