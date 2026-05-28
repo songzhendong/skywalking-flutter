@@ -12,7 +12,7 @@
 | 项目 | 说明 |
 |------|------|
 | 包名 | `skywalking_flutter` |
-| 版本 | 0.1.2 |
+| 版本 | 0.1.3 |
 | 作者 | songzhendong (xiaodong12315@qq.com) |
 | 仓库 | https://github.com/songzhendong/skywalking-flutter |
 | 协议 | OTLP over HTTP JSON |
@@ -62,7 +62,7 @@
 
 ```yaml
 dependencies:
-  skywalking_flutter: ^0.1.2
+  skywalking_flutter: ^0.1.3
 ```
 
 ### 2.2 Git（源码仓库）

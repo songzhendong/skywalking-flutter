@@ -1,0 +1,10 @@
+name: skywalking_flutter_example
+description: Minimal example for the skywalking_flutter OTLP agent.
+publish_to: none
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  skywalking_flutter:
+    path: ../

@@ -20,7 +20,7 @@ class OtlpExporterConfig {
     this.tracesEndpoint,
     this.metricsEndpoint,
     this.sdkName = 'skywalking-flutter',
-    this.sdkVersion = '0.1.2',
+    this.sdkVersion = '0.1.3',
   }) : otlpEndpoint = otlpHttpEndpoint ?? otlpEndpoint;
 
   /// `service.name` resource attribute (required).

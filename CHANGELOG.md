@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- Add `example/` for pub.dev full score; include example in published package.
+
 ## 0.1.2
 
 - Fix pub.dev `repository` URL and LICENSE recognition; document current version in changelog.
