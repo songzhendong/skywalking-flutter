@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Republish on pub.dev: pure Dart OTLP agent aligned with [skywalking-dart](https://github.com/songzhendong/skywalking-dart); docs and `repository` point to that repo.
+
 ## 0.1.0
 
 - Docs: Horizon Metrics inspect and parent-child trace screenshots (`doc/images/`).

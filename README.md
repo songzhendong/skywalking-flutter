@@ -20,7 +20,7 @@ Source repository: https://github.com/songzhendong/skywalking-dart
 | pub package | `skywalking_flutter` |
 | Runtime | Dart / Flutter apps |
 | Protocol | `POST /v1/traces`, `POST /v1/metrics` (HTTP JSON) |
-| Version | 0.1.0 |
+| Version | 0.1.1 |
 | SDK | Dart `>=3.0.0` |
 
 ## Features
@@ -91,7 +91,7 @@ Examples use service **`xt-open-app`** and OAP rule **`flutter-otlp`** ([`doc/oa
 
 ```yaml
 dependencies:
-  skywalking_flutter: ^0.1.0
+  skywalking_flutter: ^0.1.1
 ```
 
 **Git** (same source as [skywalking-dart](https://github.com/songzhendong/skywalking-dart)):

@@ -9,7 +9,7 @@ class OtlpResource {
     this.deploymentEnvironment = 'production',
     this.serviceInstanceId,
     this.sdkName = 'skywalking-flutter',
-    this.sdkVersion = '0.1.0',
+    this.sdkVersion = '0.1.1',
     this.sdkLanguage = 'dart',
     this.attributes = const {},
   });
