@@ -8,19 +8,19 @@
 </div>
 
 [![pub package](https://img.shields.io/pub/v/skywalking_flutter.svg)](https://pub.dev/packages/skywalking_flutter)
-[![GitHub](https://img.shields.io/badge/GitHub-songzhendong%2Fskywalking--dart-blue)](https://github.com/songzhendong/skywalking-dart)
+[![GitHub](https://img.shields.io/badge/GitHub-songzhendong%2Fskywalking--flutter-blue)](https://github.com/songzhendong/skywalking-flutter)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 OpenTelemetry **OTLP/HTTP** agent for **traces** and **metrics**, compatible with [Apache SkyWalking OAP](https://skywalking.apache.org/) (`receiver-otel` on port **12800**).
 
-Source repository: https://github.com/songzhendong/skywalking-dart
+Source repository: https://github.com/songzhendong/skywalking-flutter (mirror: [skywalking-dart](https://github.com/songzhendong/skywalking-dart))
 
 | Item | Value |
 |------|--------|
 | pub package | `skywalking_flutter` |
 | Runtime | Dart / Flutter apps |
 | Protocol | `POST /v1/traces`, `POST /v1/metrics` (HTTP JSON) |
-| Version | 0.1.1 |
+| Version | 0.1.2 |
 | SDK | Dart `>=3.0.0` |
 
 ## Features
@@ -91,7 +91,7 @@ Examples use service **`xt-open-app`** and OAP rule **`flutter-otlp`** ([`doc/oa
 
 ```yaml
 dependencies:
-  skywalking_flutter: ^0.1.1
+  skywalking_flutter: ^0.1.2
 ```
 
 **Git** (same source as [skywalking-dart](https://github.com/songzhendong/skywalking-dart)):

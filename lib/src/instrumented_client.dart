@@ -7,12 +7,14 @@ import 'semconv.dart';
 
 /// [http.Client] that exports OTLP CLIENT spans per request (HTTP semantic conventions).
 class InstrumentedClient extends http.BaseClient {
+  /// Wraps [inner] and records one CLIENT span per HTTP call via [exporter].
   InstrumentedClient({
     required this.exporter,
     required http.Client inner,
     this.meter,
   }) : _inner = inner;
 
+  /// Trace exporter used to build and enqueue spans for each request.
   final OtlpTraceExporter exporter;
   final http.Client _inner;
   final OtlpMeter? meter;

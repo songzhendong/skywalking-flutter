@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.2
+
+- Fix pub.dev `repository` URL and LICENSE recognition; document current version in changelog.
+
+## 0.1.1
+
+- Pure Dart OTLP/HTTP agent for traces and metrics (SkyWalking OAP compatible).
+
 ## 0.1.0
 
 - Docs: Horizon Metrics inspect and parent-child trace screenshots (`doc/images/`).

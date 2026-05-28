@@ -1,12 +1,12 @@
 name: skywalking_flutter
 description: OpenTelemetry OTLP/HTTP agent for Dart and Flutter apps (SkyWalking OAP compatible).
-version: 0.1.1
+version: 0.1.2
 license: Apache-2.0
 
-homepage: https://github.com/songzhendong/skywalking-dart
-repository: https://github.com/songzhendong/skywalking-dart
-issue_tracker: https://github.com/songzhendong/skywalking-dart/issues
-documentation: https://github.com/songzhendong/skywalking-dart/blob/main/doc/USAGE.md
+homepage: https://github.com/songzhendong/skywalking-flutter
+repository: https://github.com/songzhendong/skywalking-flutter
+issue_tracker: https://github.com/songzhendong/skywalking-flutter/issues
+documentation: https://github.com/songzhendong/skywalking-flutter/blob/main/doc/USAGE.md
 
 topics:
   - opentelemetry
